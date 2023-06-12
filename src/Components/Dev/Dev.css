@@ -1,0 +1,14 @@
+.devOhee{
+    padding: 20px;
+    font-size: 18px;
+}
+.devOhee a{
+    text-decoration: none;
+    color: rgb(163,255,174);
+}
+@media (max-width:768px) {
+    .devOhee{
+        font-size: 13px;
+        padding: 20px;
+    }
+}

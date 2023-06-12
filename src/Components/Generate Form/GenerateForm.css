@@ -1,0 +1,179 @@
+.generateForm{
+    height: fit-content;
+    background-color: rgb(35,34,42);
+    width: 40vw;
+    padding: 20px;
+    border-radius: 5px;
+}
+.charecterL{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.charecterL h3{
+    font-size: 18px;
+    font-weight: 400;
+}
+.charecterL h1{
+    font-size: 32px;
+    font-weight: 600;
+   color: rgb(163,255,174);
+}
+.ranges{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.inpRange{
+    width: 100%;
+    -webkit-appearance: none;
+    background: hsl(248, 15%, 11%);
+    height: 5px;
+    border-radius: 15px;
+    outline: none;
+    filter: drop-shadow(0px 0px 20px black);
+    position: absolute;
+}
+.inpRange::-webkit-slider-runnable-track{
+    -webkit-appearance: none;
+    z-index: 10;
+}
+.inpRange::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: rgb(163,255,174);
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    border: 15px;
+    border-radius: 20px;
+    outline: none;
+    filter: drop-shadow(0px 0px 20px black);
+    z-index: 10000000;
+}
+.checkPoints{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 300px;
+}
+.uCanse, .Lcase,.num, .symbol{
+    display: flex;
+    align-items: center;
+}
+.uCanse label, .Lcase label, .num label, .symbol label{
+    margin-left: 10px;
+    font-size: 18px;
+}
+.uCanse input, .Lcase input, .num input, .symbol input{
+    height: 20px;
+    width: 20px;
+}
+input[type="checkbox"]{
+    -webkit-appearance: none;
+    cursor: pointer;
+    border: 2px solid white;
+}
+input[type="checkbox"]::after{
+    position: absolute;
+    top: 3;
+}
+input[type="checkbox"]:checked{
+    content: url(../Images/check-solid.svg);
+    background: rgb(163,255,174);
+    border: 2px solid rgb(163,255,174);
+}
+.stage{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(25,24,32);
+    padding: 20px;
+    border-radius: 5px;
+}
+.stage h4{
+    color: #807c92;
+    font-size: 18px;
+}
+.boxes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.StrengthBox1,.StrengthBox2,.StrengthBox3,.StrengthBox4{
+    height: 35px;
+    width: 10px;
+    background-color: transparent;
+    border: 2px solid white;
+    margin-left: 5px;
+    border-radius: 2px;
+}
+.StrengthBox1Color,.StrengthBox3Color,.StrengthBox4Color{
+    height: 35px;
+    width: 10px;
+    margin-left: 5px;
+    border-radius: 2px; 
+}
+.StrengthBox1Color{
+    background-color: red;
+    border: 2px solid red;
+}
+.StrengthBox3Color{
+    background-color: orange;
+    border: 2px solid orange;
+}
+.StrengthBox4Color{
+    background-color: rgb(163,255,174);
+    border: 2px solid rgb(163,255,174);
+}
+.generatebutton{
+    background-color: rgb(163,255,174);
+    border: 2px solid rgb(163,255,174);
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+}
+.generatebutton:hover{
+    background-color: transparent;
+    color: rgb(163,255,174);
+    border-radius: 5px;
+}
+
+@media (max-width:768px) {
+    .generateForm{
+        width: 90vw;
+    }
+    .ranges{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .uCanse, .Lcase,.num, .symbol{
+        display: flex;
+        align-items: center;
+    }
+    .uCanse label, .Lcase label, .num label, .symbol label{
+        font-size: 14px;
+    }
+    input[type="checkbox"]{
+        height: 25px;
+        width:  25px;
+    }
+    .boxes h3{
+        font-size: 14px;
+    }
+    .generatebutton{
+        font-size: 16px;
+    }
+}
