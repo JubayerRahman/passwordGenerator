@@ -1,11 +1,14 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./ResultSec.css"
 
 const ResultSec = (props) => {
     const [copyICon , setcopyICon] = useState("fa-solid fa-copy")
     const [saveICon , setsaveICon] = useState("fa-regular fa-floppy-disk")
     const [passwordsArray , setpasswordsArray] = useState([])
-    localStorage.setItem("passwords" , JSON.stringify(passwordsArray))
+    useEffect(()=>{
+      setpasswordsArray(JSON.parse(localStorage.getItem('passwords')))
+    },[])
+    // localStorage.setItem("passwords" , JSON.stringify(passwordsArray))
     // const passwordsArray =[]
     let pass ="P4$5W0rD!"
     const passData= (props.presult)

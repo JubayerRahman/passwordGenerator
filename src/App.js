@@ -4,11 +4,13 @@ import Dev from './Components/Dev/Dev';
 import Home from './Components/Home/Home';
 import SavedPass from './Components/SavedPassword/SavedPass';
 import { Routes, Route, Link } from 'react-router-dom';
+import DiaLog from './Components/DiaLogBox/DiaLog';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <DiaLog/>
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/savePass' element={<SavedPass/>}/>

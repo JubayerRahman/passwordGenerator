@@ -1,0 +1,17 @@
+.showDialog{
+    position: fixed;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(35,34,42);
+    z-index: 10000;
+}
+.showDialog p{
+    padding: 20px;
+}
+.hideDialog{
+    display: none;
+}

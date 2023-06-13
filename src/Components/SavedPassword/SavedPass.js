@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import "./SavedPass.css"
 import { Link } from 'react-router-dom'
 
@@ -23,7 +23,6 @@ const SavedPass = () => {
       </div>
       <button onClick={()=>{
             localStorage.clear();
-            // window.location.reload();
           }}><Link className='deleteLink' to='/'><i className="fa-solid fa-trash"></i> Clear All</Link></button>
     </div>
   )
