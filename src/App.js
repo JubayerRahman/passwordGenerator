@@ -10,15 +10,15 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <DiaLog/>
+        {/* <DiaLog/> */}
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/savePass' element={<SavedPass/>}/>
         </Routes>
-        <div className='Links'>
+        {/* <div className='Links'>
           <Link className='nevLink' to="/"><i class="fa-solid fa-house"></i></Link>
           <Link className='nevLink' to='/savePass'><i class="fa-regular fa-bookmark"></i></Link>
-        </div>
+        </div> */}
         <Dev/>
       </header>
     </div>
