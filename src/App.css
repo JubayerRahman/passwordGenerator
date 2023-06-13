@@ -28,6 +28,41 @@
 .App-link {
   color: #61dafb;
 }
+.Links{
+  background-color: rgb(35,34,42);
+  /* background-color: rgb(141,217,151); */
+  width: 100vw;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0vh;
+  border-top: 2px solid rgb(17,16,22);
+}
+.nevLink{
+  color: rgb(141,217,151);
+  text-decoration: none;
+  font-size: 32px;
+  transition: all 0.5s ease-out;
+}
+.nevLink:hover{
+  color: white;
+  font-size: 35px;
+}
+
+@media (max-width:768px) {
+  .Links{
+    width: 100vw;
+    justify-content: space-evenly;
+  }
+  .nevLink{
+    font-size: 20px;
+  }
+  .nevLink:hover{
+    font-size: 24px;
+  }
+}
 
 @keyframes App-logo-spin {
   from {

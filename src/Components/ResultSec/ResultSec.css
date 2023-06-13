@@ -64,4 +64,7 @@
     .result::-webkit-scrollbar-thumb{
         background-color: rgb(163,255,174);
     }
+    .result{
+        width: 75%;
+    }
 }

@@ -1,0 +1,47 @@
+.savePage{
+    /* min-height: 90vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(35,34,42);
+    padding: 20px;
+    border-radius: 5px;
+    width: 90vw;
+}
+.paswordsP{
+    width: 90%;
+    /* background-color: green; */
+    margin: 20px;
+}
+.savePasswordButton{
+    width: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.paswordsP .singleData{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 2px solid ;
+}
+.paswordsP div button,  .savePage button{
+    background-color: rgb(35,34,42);
+    border: none;
+    color: rgb(163,255,174);
+    font-size: 25px;
+    font-family: 'JetBrains Mono', monospace;
+}
+.deleteLink{
+    text-decoration: none;
+    color: rgb(163,255,174);
+}
+.paswordsP div button:hover{
+    color: white;
+}
+
+@media (max-width:768px) {
+    .paswordsP{
+        width: 100%;
+    }
+}

@@ -1,21 +1,22 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
-import GenerateForm from './Components/Generate Form/GenerateForm';
 import Dev from './Components/Dev/Dev';
-import ResultSec from './Components/ResultSec/ResultSec';
+import Home from './Components/Home/Home';
+import SavedPass from './Components/SavedPassword/SavedPass';
+import { Routes, Route, Link } from 'react-router-dom';
 
 function App() {
-  const [passWord, setPassword] = useState()
-  console.log(passWord)
-
-  const getPfromChild =(data)=>{
-    setPassword(data)
-  }
   return (
     <div className="App">
       <header className="App-header">
-        <ResultSec presult ={passWord}/>
-        <GenerateForm getPfromChild={getPfromChild}/>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/savePass' element={<SavedPass/>}/>
+        </Routes>
+        <div className='Links'>
+          <Link className='nevLink' to="/"><i class="fa-solid fa-house"></i></Link>
+          <Link className='nevLink' to='/savePass'><i class="fa-regular fa-bookmark"></i></Link>
+        </div>
         <Dev/>
       </header>
     </div>
