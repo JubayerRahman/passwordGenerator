@@ -133,6 +133,19 @@ const GenerateForm = (props) => {
           }
           props.getPfromChild(allPass)
         }
+        if (check1===false && check2 && check3===false && check4) {
+          const rangeDevide = Math.floor(range/ 2)
+          const rangeDifferance = range - (rangeDevide*2)
+          for (let i = 0; i < rangeDevide; i++) {
+            const randomIndex = Math.floor(Math.random() * range)
+            allPass += lowerCase[randomIndex]
+          }
+          for (let i = 0; i < (rangeDevide+ rangeDifferance); i++) {
+            const randomIndex = Math.floor(Math.random() * range)
+            allPass += symbol[randomIndex]
+          }
+          props.getPfromChild(allPass)
+        }
         if (check1 && check2===false && check3 && check4===false) {
           const rangeDevide = Math.floor(range/ 2)
           const rangeDifferance = range - (rangeDevide*2)
